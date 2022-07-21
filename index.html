@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <section class="background">
+      <img src="/images/bg-mobile-light.jpg" alt="" />
+    </section>
+    <main class="container">
+      <header>
+        <h1>Todo</h1>
+        <img
+          class="hover-cursor"
+          src="/images/icon-moon.svg"
+          alt="go-dark-side"
+        />
+      </header>
+      <section>
+        <section class="add_task card">
+          <input type="text" id="task_input" placeholder="Create a new todo" />
+        </section>
+        <section class="task_list card">
+          <ul class="task_list_items"></ul>
+          <div class="task_list_actions">
+            <p class="tasks_left_counter">0 items left</p>
+            <p class="clear_completed_task">Clear completed</p>
+          </div>
+        </section>
+        <section class="task_category card">
+          <p class="active_category">All</p>
+          <p>Active</p>
+          <p>Completed</p>
+        </section>
+      </section>
+      <footer>
+        Challenge by&nbsp
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by&nbsp
+        <a href="https://www.github.com/destructo570" target="_blank"
+          >Vishal Kashi</a
+        >.
+      </footer>
+    </main>
+  </body>
 </html>
